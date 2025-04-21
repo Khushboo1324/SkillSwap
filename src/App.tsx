@@ -1,17 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { SkillProvider } from './contexts/SkillContext';
+import { SkillProvider } from './contexts/SkillContext.jsx';
 
 // Import pages
-import HomePage from './pages/HomePage';
-import SkillGiverPage from './pages/SkillGiverPage';
-import SkillGiverPostsPage from './pages/SkillGiverPostsPage';
-import LearnerRegistrationPage from './pages/LearnerRegistrationPage';
-import MatchStatusPage from './pages/MatchStatusPage';
+import HomePage from './pages/HomePage.jsx';
+import SkillGiverPage from './pages/SkillGiverPage.jsx';
+import SkillGiverPostsPage from './pages/SkillGiverPostsPage.jsx';
+import LearnerRegistrationPage from './pages/LearnerRegistrationPage.jsx';
+import MatchStatusPage from './pages/MatchStatusPage.jsx';
 
 // Import components
-import Navigation from './components/Navigation';
-
+import Navigation from './components/Navigation.jsx';
 function App() {
   return (
     <BrowserRouter>

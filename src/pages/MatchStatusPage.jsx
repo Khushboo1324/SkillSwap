@@ -1,7 +1,6 @@
 import { useLocation, Link } from 'react-router-dom';
 import { useSkillContext } from '../contexts/SkillContext';
-import MatchDisplay from '../components/MatchDisplay';
-import { AlertOctagon, BookOpen, Clock } from 'lucide-react';
+import { BookOpen, Clock } from 'lucide-react';
 
 const MatchStatusPage = () => {
   const location = useLocation();
@@ -67,50 +66,6 @@ const MatchStatusPage = () => {
                 >
                   Browse Available Skills
                 </Link>
-              </div>
-            )}
-          </div>
-          
-          {/* Skill Requests Section */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 border border-purple-100">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Your Skill Requests</h2>
-            
-            {skillRequests.length > 0 ? (
-              <div className="space-y-6">
-                {skillRequests.map((request) => (
-                  <div
-                    key={request.id}
-                    className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl p-6"
-                  >
-                    <div className="flex justify-between items-center mb-4">
-                      <h3 className="text-xl font-semibold text-gray-800">
-                        {request.desiredSkill}
-                      </h3>
-                      <span
-                        className={`px-3 py-1 rounded-full text-sm font-medium ${
-                          request.status === 'Matched'
-                            ? 'bg-green-100 text-green-800'
-                            : 'bg-amber-100 text-amber-800'
-                        }`}
-                      >
-                        {request.status}
-                      </span>
-                    </div>
-                    {request.personalNote && (
-                      <p className="text-gray-600 mb-4">Note: {request.personalNote}</p>
-                    )}
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="text-center py-8">
-                <AlertOctagon className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                  No Skill Requests Yet
-                </h3>
-                <p className="text-gray-500">
-                  You haven't made any skill requests yet. Start your learning journey today!
-                </p>
               </div>
             )}
           </div>
