@@ -37,7 +37,7 @@ const HomePage = () => {
           </Link>
           
           <Link
-            to="/skill-seeker"
+            to="/skill-posts"
             className="bg-white rounded-lg shadow-md p-8 border-2 border-transparent hover:border-purple-500 transition-all hover:shadow-lg transform hover:-translate-y-1"
           >
             <div className="flex flex-col items-center text-center">
