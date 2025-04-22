@@ -25,7 +25,7 @@ function App() {
               <Route path="/skill-posts" element={<SkillGiverPostsPage />} />
               <Route path="/register-learner" element={<LearnerRegistrationPage />} />
               <Route path="/match-status" element={<MatchStatusPage />} />
-              <Route path="/skillseeker" element={<SkillSeekerPage/>} />
+              <Route path="/skill-seeker" element={<SkillSeekerPage/>} />
             </Routes>
           </main>
           <footer className="bg-gray-800 text-white py-4 text-center text-sm">
