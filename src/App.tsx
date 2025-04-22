@@ -8,6 +8,7 @@ import SkillGiverPage from './pages/SkillGiverPage.jsx';
 import SkillGiverPostsPage from './pages/SkillGiverPostsPage.jsx';
 import LearnerRegistrationPage from './pages/LearnerRegistrationPage.jsx';
 import MatchStatusPage from './pages/MatchStatusPage.jsx';
+import SkillSeekerPage from './pages/SkillSeekerPage.jsx';
 
 // Import components
 import Navigation from './components/Navigation.jsx';
@@ -24,6 +25,7 @@ function App() {
               <Route path="/skill-posts" element={<SkillGiverPostsPage />} />
               <Route path="/register-learner" element={<LearnerRegistrationPage />} />
               <Route path="/match-status" element={<MatchStatusPage />} />
+              <Route path="/skillseeker" element={<SkillSeekerPage/>} />
             </Routes>
           </main>
           <footer className="bg-gray-800 text-white py-4 text-center text-sm">
